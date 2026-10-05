@@ -1,0 +1,20 @@
+[none] steering readout over 1314 cells (source: dn)
+[none] retinotopic map {'L': (657, 554, 562, 1661), 'R': (734, 611, 618, 2240)}; bump decoder over 7397 medulla cells
+flypp/network.py:133: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/Context.cpp:848.)
+  W = torch.sparse_coo_tensor(torch.stack([self.dst, self.src]), w, (self.n_nodes, self.n_nodes)).coalesce()
+flypp/network.py:134: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:49.)
+  self._W = W.to_sparse_csr(); self._W_key = key
+[none] open-loop sweep, readout vs ball x: [2.728 2.718 2.727 2.747 2.735 2.689 2.556 2.601 2.715]  slope(left-offset) +0.0089  (should be POSITIVE)
+[none] open-loop sweep, bump azimuth (deg, +left) vs ball x: [13, 10, 8, 3, 1, -4, -8, -9, -16]  amp [0.27, 0.56, 0.33, 0.54, 0.44, 0.42, 0.52, 0.42, 0.2]  (should FALL with x)
+[none] t=0s hits [0, 0] rally 0
+[none] t=5s hits [1, 1] rally 2
+[none] t=10s hits [3, 2] rally 2
+[none] t=15s hits [5, 4] rally 6
+[none] t=20s hits [5, 5] rally 0
+[none] t=25s hits [7, 6] rally 3
+[none] t=30s hits [7, 6] rally 0
+[none] t=35s hits [7, 6] rally 0
+[none] bump amplitude percentiles 10/50/90: [0.06  0.309 0.729]  frac below amp_min 0.06
+[none] steer check: corr(est, ball-left-offset) A=+0.119 B=-0.222  (bump: should be POSITIVE; contrast: NEGATIVE)   contrast A range +0.680..+5.264   net events 0
+[none] 40s: points 10, hits 14, mean rally 1.40, max rally 6
+saved cache/tennis_none.json (9.6 MB)

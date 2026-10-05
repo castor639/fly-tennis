@@ -1,0 +1,13 @@
+data/
+cache/checkpoints/
+cache/viz*_payload*.json
+cache/tennis_connectome.json
+cache/tennis_scripted.json
+cache/tennis_trained.json
+cache/tennis_untrained.json
+__pycache__/
+*.pyc
+*.pt
+.venv/
+node_modules/
+.DS_Store

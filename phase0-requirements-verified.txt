@@ -1,0 +1,5 @@
+flygym==2.1.0
+mujoco==3.9.0
+mujoco-warp==3.9.0.1
+numpy==2.5.3
+warp-lang==1.15.0

@@ -1,0 +1,12 @@
+# simulation + model (CPU is enough for inference; a GPU is only needed for flypp/train_azimuth.py)
+torch>=2.4
+numpy
+pandas
+pyarrow
+scipy
+pyyaml
+flygym==2.1.0
+mujoco==3.9.0
+# optional, GPU batching of the body physics on the training box only
+# mujoco-warp==3.9.0.1
+# warp-lang==1.15.0
